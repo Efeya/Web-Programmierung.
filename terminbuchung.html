@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Buchen Sie einen Termin zur Miete von Boxautomaten">
+    <link rel="stylesheet" href="css/styles.css"> <!-- Verknüpfung zur styles.css -->
+    <title>Boxautomaten Vermietung - Terminbuchung</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="boxautomaten.html">Boxautomaten</a></li>
+                <li><a href="terminbuchung.html">Terminbuchung</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Terminbuchung</h1>
+        <form action="https://webhook.site" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-Mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="automat">Boxautomat wählen:</label>
+            <select id="automat" name="automat" required>
+                <option value="typ_a">Automat Typ A</option>
+                <option value="typ_b">Automat Typ B</option>
+                <option value="typ_c">Automat Typ C</option>
+            </select>
+
+            <label for="termin">Termin auswählen:</label>
+            <input type="date" id="termin" name="termin" required>
+
+            <button type="submit">Buchen</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Boxautomaten Vermietung</p>
+    </footer>
+    <script src="js/script.js"></script> <!-- Verknüpfung zur script.js -->
+</body>
+</html>
